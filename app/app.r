@@ -1,10 +1,7 @@
 library(shiny)
 
 ui <- fluidPage(
-  titlePanel(paste(
-    "Eu não tenho servidor!!",
-    emo::ji("surprised")
-  )),
+  titlePanel("Eu não tenho servidor!! 🙀"),
   sidebarLayout(
     sidebarPanel(
       selectInput("x", "Eixo x", choices = names(mtcars)),
@@ -23,3 +20,5 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
+
+# httpuv::runStaticServer("docs/")
