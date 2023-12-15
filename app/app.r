@@ -1,7 +1,7 @@
 library(shiny)
 
 ui <- fluidPage(
-  titlePanel("Eu não tenho servidor!! 🙀"),
+  h2("Eu não tenho servidor!!", style = "color: purple;"),
   sidebarLayout(
     sidebarPanel(
       selectInput("x", "Eixo x", choices = names(mtcars)),
